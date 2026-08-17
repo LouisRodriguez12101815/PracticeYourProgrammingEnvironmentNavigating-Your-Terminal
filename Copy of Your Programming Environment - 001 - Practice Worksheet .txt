@@ -1,0 +1,81 @@
+﻿Your Programming Environment | Lesson 1
+Practice: Navigating Your Terminal Worksheet
+
+
+Instructions
+You will use your terminal to complete a few tasks. For each task:
+1. Follow the instructions for the task carefully.
+2. Enter the requested command or output specified by the instructions into the provided space below.
+
+
+
+
+1. Create a directory called group-challenge in your home directory by entering the following. 
+Enter the command you have written to create the directory in the space below.
+	
+
+Mkdir group-challenge
+
+
+
+
+
+
+	2. Inside the group-challenge directory, create the following subdirectories: resources, projects, and backups. 
+Enter the command you have written to create these directories in the space below.
+	Cd group-challenge, mkdir resources, mkdir projects, mkdir backups
+
+
+
+
+
+
+	3. Navigate to the resources directory using a relative path.
+Submit the output of the pwd command from the resources directory in the space below.
+	Cd ../resources
+~/home/group-challenge/resources
+
+
+	4. Inside the resources directory, create two empty files: one.txt and two.txt.
+Submit the output of the ls command from the resources directory in the space below.
+	Cd ../resources, touch one.txt, touch two.txt
+one.txt
+two.txt
+..
+.
+
+
+	
+
+	
+
+
+
+
+
+	5. Move two.txt from the resources directory to the backups directory and rename it to archived_two.txt.
+Submit the output of the ls command from the backups directory in the space below.
+	mv resources/two.txt backups/archived_two.txt
+.
+..
+archived_two.txt
+
+
+
+
+
+	6. Delete one.txt from the projects directory.
+Submit the output of the ls command from the projects directory in the space below.
+	rm projects/one.txt
+
+.
+..
+
+
+
+
+	7. Use a single command to navigate to the backups directory from the projects directory using a relative path.
+Enter the command you used to complete this task in the space below.
+	
+
+cd ../../backups
