@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Programming Environment | Lesson 1</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      line-height: 1.25;
+    }
+    section {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border: 1px solid #6664;
+      border-radius: 8px;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #0001;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #6663;
+    }
+    .muted {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Your Programming Environment | Lesson 1</h1>
+    <p><strong>Practice: Navigating Your Terminal Worksheet</strong></p>
+    <p class="muted">Published as a static page so this repository is visible on GitHub Pages.</p>
+    <h2>Instructions</h2>
+    <p>You will use your terminal to complete a few tasks. For each task:</p>
+    <ol>
+      <li>Follow the instructions for the task carefully.</li>
+      <li>Enter the requested command or output specified by the instructions into the provided space below.</li>
+    </ol>
+    <section>
+      <h2>1) Create a directory called <code>group-challenge</code> in your home directory.</h2>
+      <p>Command entered:</p>
+      <pre>mkdir group-challenge</pre>
+    </section>
+    <section>
+      <h2>2) Inside <code>group-challenge</code>, create subdirectories <code>resources</code>, <code>projects</code>, and <code>backups</code>.</h2>
+      <p>Command entered:</p>
+      <pre>cd group-challenge
+mkdir resources
+mkdir projects
+mkdir backups</pre>
+    </section>
+    <section>
+      <h2>3) Navigate to the <code>resources</code> directory using a relative path.</h2>
+      <p>Submitted command/output:</p>
+      <pre>cd ../resources
+~/home/group-challenge/resources</pre>
+    </section>
+    <section>
+      <h2>4) Inside <code>resources</code>, create two empty files: <code>one.txt</code> and <code>two.txt</code>.</h2>
+      <p>Submitted command/output:</p>
+      <pre>cd ../resources
+touch one.txt
+touch two.txt
+one.txt
+two.txt
+..
+.</pre>
+    </section>
+    <section>
+      <h2>5) Move <code>two.txt</code> from <code>resources</code> to <code>backups</code> and rename it to <code>archived_two.txt</code>.</h2>
+      <p>Submitted command/output:</p>
+      <pre>mv resources/two.txt backups/archived_two.txt
+.
+..
+archived_two.txt</pre>
+    </section>
+    <section>
+      <h2>6) Delete <code>one.txt</code> from the <code>projects</code> directory.</h2>
+      <p>Submitted command/output:</p>
+      <pre>rm projects/one.txt
+.
+..</pre>
+    </section>
+    <section>
+      <h2>7) Use a single command to navigate to the <code>backups</code> directory from the <code>projects</code> directory using a relative path.</h2>
+      <p>Command entered:</p>
+      <pre>cd ../../backups</pre>
+    </section>
+  </main>
+</body>
+</html>
